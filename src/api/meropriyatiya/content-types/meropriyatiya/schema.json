@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meropriyatiyas",
+  "info": {
+    "singularName": "meropriyatiya",
+    "pluralName": "meropriyatiyas",
+    "displayName": "Мероприятия",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.quote"
+    }
+  }
+}
